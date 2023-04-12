@@ -249,6 +249,7 @@ function highlightNode(texts) {
     for (i in tempTexts) {
         var tempText = tempTexts[i].trim()
         if (tempText != "") {
+            var tempText = tempText.replace(/[^\w\s]/gi, '')
             words.push(tempText)
         }
     }
